@@ -1,0 +1,17 @@
+.fashion-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.fashion-grid .grid-item img {
+    width: 100%;
+}
+
+.fashion-flex {
+    position: relative;
+}
+
+.fashion-flex img {
+    width: 80%;
+}

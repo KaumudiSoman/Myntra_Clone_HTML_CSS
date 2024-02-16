@@ -1,0 +1,230 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+    height: 60px;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 44%;
+    position: relative;
+}
+
+.options div {
+    margin-right: 20px;
+    font-size: small;
+}
+
+.option-name-men, .option-name-women, .option-name-kids,
+.option-name-hl, .option-name-beauty, .option-name-studio {
+    position: relative;
+    cursor: pointer;
+}
+
+.floating-div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    background-color: white;
+    top: 55px;
+    left: 100px;
+    width: 1100px;
+    height: 430px;
+    line-height: 20px;
+    opacity: 0;
+    padding-top: 20px;
+    transition: opacity 0.7s;
+}
+
+.floating-div-men h4 {
+    color: orangered;
+}
+
+.floating-div-women h4 {
+    color: rgb(255, 92, 165);
+}
+
+.floating-div-kids h4 {
+    color: orange;
+}
+
+.floating-div-hl h4 {
+    color: rgb(231, 194, 9);
+}
+
+.floating-div-beauty h4 {
+    color: rgb(32, 198, 170);
+}
+
+.floating-div p {
+    font-weight: 300;
+}
+
+.inner-floating-div-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding-left: 20px;
+    margin-left: -15px;
+    margin-right: -13px;
+}
+
+.inner-floating-div-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: rgb(226, 226, 226);
+    padding-left: 20px;
+    margin-left: -15px;
+    margin-right: -13px;
+}
+
+.inner-floating-div-1 h4, .inner-floating-div-2 h4 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.options .new {
+    position: absolute;
+    color: red;
+    font-size: 9px;
+    right: -18;
+    top: 10;
+}
+
+.floating-div-studio {
+    position: absolute;
+    top: 60px;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 530px;
+    height: 440px;
+    padding-left: 15px;
+    opacity: 0;
+    transition: opacity 0.7s;
+}
+
+.floating-div-studio div {
+    margin: 0;
+}
+
+.floating-div-studio p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.floating-div-studio button {
+    background-color: white;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid rgb(188, 188, 188);
+    margin-bottom: 15px;
+}
+
+.option-name-men:hover + .floating-div, 
+.option-name-women:hover + .floating-div,
+.option-name-kids:hover + .floating-div,
+.option-name-hl:hover + .floating-div,
+.option-name-beauty:hover + .floating-div,
+.option-name-studio:hover + .floating-div-studio {
+    opacity: 1;
+}
+
+.floating-div-studio img {
+    width: 95%;
+    padding: 10px 0;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+}
+
+.header input {
+    width: 520px;
+    height: 40px;
+    min-width: 200px;
+    padding-left: 50px;
+    border: none;
+    background-color: rgb(246, 246, 246);
+}
+
+.search-bar .fa-search {
+    position: absolute;
+    left: 15px;
+    color: rgb(139, 139, 139);
+}
+
+.personal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 11%;
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    color: white;
+    background-color: red;
+    top: -5;
+    right: -5;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 20px;
+}
+
+.personal div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.personal p {
+    margin-top: 2;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.myntra_logo img {
+    width: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.personal img {
+    width: 30px;
+}
